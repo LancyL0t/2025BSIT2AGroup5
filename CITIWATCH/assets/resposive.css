@@ -1,0 +1,168 @@
+@media (max-width: 1024px) {
+    .hero {
+        padding: 0 10px;
+    }
+    .hero h1 {
+        font-size: 50px;
+        margin-top: 80px;
+    }
+    .hero p {
+        font-size: 18px;
+        padding: 0 20px;
+        margin-bottom: 20px;
+    }
+    .social h3 {
+        font-size: 15px;
+    }
+    .social p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 810px) {
+    .navdiv {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    .navdiv ul {
+        padding-left: 0;
+    }
+    .navdiv ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+    .hero h1 {
+        font-size: 40px;
+        margin-top: 60px;
+    }
+    .hero p {
+        font-size: 16px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .hamburger {
+        display: block;
+        margin-right: 10px;
+    }
+    .navdiv ul {
+        display: none;
+    }
+    .navbar {
+        padding: 15px;
+    }
+    .logo {
+        padding-left: 15px;
+    }
+    .hamburger.active span:nth-child(1) {
+        transform: translateY(8px); 
+      }
+      
+      .hamburger.active span:nth-child(2) {
+        opacity: 0; 
+      }
+      
+      .hamburger.active span:nth-child(3) {
+        transform: translateY(-8px); 
+      }
+    .but {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+    .report, .view {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 120px;
+        height: 44px;
+        padding: 0 14px;
+        font-size: 14px;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .report:hover, .view:hover {
+        transform: none;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    .report-cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .card {
+        width: 90%;
+        max-width: 400px;
+    }
+    footer {
+        text-align: center;
+    }
+    .container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        padding: 20px;
+        gap: 15px;
+    }
+    .about,
+    .social,
+    .qoute {
+        flex-basis: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .logo {
+        padding: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo p {
+        font-size: 20px;
+    }
+    .logo img {
+        width: 45px;
+        height: 45px;
+    }
+    .hero h1 {
+        font-size: 28px;
+    }
+    .hero p {
+        font-size: 14px;
+        margin-bottom: 16px;
+    }
+    .but {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+    .but button {
+        width: 100%;
+        margin-bottom: 0;
+    }
+    .report, .view {
+        width: 100%;
+        min-width: 0;
+        height: 44px;
+        padding: 0 12px;
+        font-size: 13px;
+        margin: 0;
+    }
+    .card {
+        width: 100%;
+    }
+    .about p {
+        font-size: 18px;
+        text-align: center;
+    }
+    .social h3, .social p, .qoute p {
+        font-size: 14px;
+        text-align: center;
+    }
+}

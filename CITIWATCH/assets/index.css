@@ -1,0 +1,281 @@
+/*Index page*/
+.hero {
+    font-family: 'Gill Sans','Gill Sans MT',Calibri,'Trebuchet MS',sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #101624;
+}
+
+
+.hero h1 {
+    font-weight: bolder;
+    font-size: 60px;
+    margin-top: 110px;
+    padding-bottom: 30px;
+    color: #fff;
+    text-align: center;
+}
+
+
+.hero h1 .highlight {
+  color: #f44336;  
+}
+.hero p {
+    
+    padding-bottom: 0px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.but {
+    margin-bottom: 100px;
+    margin-top: 20px;
+}
+
+.but button {
+    height: 50px;
+    border-radius: 10px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.but button:hover {
+    opacity: 0.85;
+}
+
+.report {
+    width: 180px;
+    background: #ff1900;
+    color: #fff;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.view {
+    width: 180px;
+    background: #494a4d;
+    color: #fff;
+    font-weight: bold;
+}
+
+.report:hover,
+.view:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+.recent-reports {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px 20px;
+    height: auto;
+    text-align: center;
+    font-family: 'Gill Sans','Gill Sans MT',Calibri,'Trebuchet MS',sans-serif;
+}
+
+.report-cards {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.card {
+    background: #1f2638;
+    border: 1px solid #2a3142;
+    border-radius: 12px;
+    overflow: hidden;
+    width: 400px;
+    text-align: left;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.viewdetails {
+    position: absolute;
+    bottom: 15px; 
+    right: 15px;  
+    text-decoration: none;
+    color: #2d6ee5;
+    font-weight: bold;
+}
+
+.card-body {
+    padding-bottom: 40px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.card-body h3, p, p.meta {
+    margin-bottom: 10px;
+}
+
+.card-body p, p.meta {
+    text-align: left;
+}
+
+.status {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+.emergency {
+    background: #ff0800;
+    color: #fff;
+}
+
+.progress {
+    background: #2d6ee5;
+    color: #fff;
+}
+
+.resolved {
+    background: #4caf50;
+    color: #fff;
+}
+
+.all {
+    display: inline-block;
+    background: #2d6ee5;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.all:hover {
+    background: #101624;
+    transform: scale(1.08);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+
+/* ================= HERO SECTION ================= */
+@media (max-width: 1024px) {
+    .hero {
+        padding: 0 10px;
+    }
+    .hero h1 {
+        font-size: 50px;
+        margin-top: 80px;
+    }
+    .hero p {
+        font-size: 18px;
+        padding: 0 20px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 810px) {
+    .hero h1 {
+        font-size: 40px;
+        margin-top: 60px;
+    }
+    .hero p {
+        font-size: 16px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 28px;
+    }
+    .hero p {
+        font-size: 14px;
+        margin-bottom: 16px;
+    }
+}
+
+/* ================= BUTTONS ================= */
+@media (max-width: 810px) {
+    .but {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+    .report, .view {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 120px;
+        height: 44px;
+        padding: 0 14px;
+        font-size: 14px;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .report:hover, .view:hover {
+        transform: none;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+}
+
+@media (max-width: 480px) {
+    .but {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+    .but button {
+        width: 100%;
+        margin-bottom: 0;
+    }
+    .report, .view {
+        width: 100%;
+        min-width: 0;
+        height: 44px;
+        padding: 0 12px;
+        font-size: 13px;
+        margin: 0;
+    }
+}
+
+/* ================= REPORT CARDS ================= */
+@media (max-width: 810px) {
+    .report-cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .card {
+        width: 90%;
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%;
+    }
+}

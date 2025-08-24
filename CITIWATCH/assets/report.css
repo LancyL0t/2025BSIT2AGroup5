@@ -1,0 +1,210 @@
+/*Report Page*/
+
+.formcontainer {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(to bottom, #0b1523, #1a1f2c);
+}
+
+.form-card {
+    background: #161c2c;
+    padding: 30px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.4);
+    overflow-y: auto;
+}
+
+.form-header {
+    background: #ff0800;
+    text-align: center;
+    padding: 20px;
+    border-radius: 12px 12px 0 0;
+    margin: -30px -30px 20px -30px;
+}
+
+
+
+.form-header h2 {
+    font-size: 28px;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.form-header p.subtitle {
+    font-size: 14px;
+    color: #fff;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background-color: #1f2638;
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+textarea {
+    height: 120px;
+    resize: none;
+}
+
+
+.btn {
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    cursor: pointer;
+    transition: 0.2s;
+    width: 100%;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.btn.blue {
+    background: #2d6ee5;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+
+#getLocation::before {
+    content: "📍 ";
+}
+
+.form_map{
+    width: 100%;
+    height: 400px;
+}
+
+.file-upload {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    background: #1f2638;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Completely hide the native file input */
+.file-upload input[type="file"] {
+  position: absolute;
+  left: -9999px;
+}
+
+/* Styled upload button */
+.file-btn {
+  display: inline-block;
+  padding: 14px 24px;
+  background-color: #2563eb; /* Blue */
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.file-btn:hover {
+  background-color: #1e40af; /* Darker blue */
+}
+
+/* File name beside button */
+.file-name {
+  margin-left: 12px;
+  font-size: 15px;
+  color: #bbb;
+  font-style: italic;
+}
+
+
+.warning {
+    background: #2d2215;
+    color: #f1c40f;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* 📱 Mobile First (max-width: 768px) */
+@media (max-width: 768px) {
+  .form-card {
+    padding: 20px;
+    max-width: 100%;
+  }
+
+  .form-header h2 {
+    font-size: 22px;
+  }
+
+  .form-header p.subtitle {
+    font-size: 12px;
+  }
+
+  form input,
+  form select,
+  form textarea {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .col {
+    width: 100%;
+  }
+
+  .form_map {
+    height: 250px; /* shorter on small screens */
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+/* 💻 Tablets (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .form-card {
+    max-width: 80%;
+  }
+
+  .form-header h2 {
+    font-size: 26px;
+  }
+
+  .form_map {
+    height: 300px;
+  }
+}
+
+/* 🖥️ Large Screens (Default - already fine) */
+@media (min-width: 1025px) {
+  .form-card {
+    max-width: 600px;
+  }
+
+  .form_map {
+    height: 400px;
+  }
+}
