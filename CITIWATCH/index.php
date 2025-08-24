@@ -3,7 +3,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-     <link rel="stylesheet" href="assets/style.css" />
+     <link rel="stylesheet" href="assets/general.css" />
+     <link rel="stylesheet" href="assets/navfoot.css">
+     <link rel="stylesheet" href="assets/index.css">
      <script src="assets/script.js"></script>
 
 </head>
@@ -12,11 +14,12 @@
 
     <main>
         <div class = "hero">
-            <h1> CitiWatch: Community Alert & Action Hub</h1>
-            <p>Empowering citizens to report safety hazards and infrastructure issues for faster response and safer communities</p>
+            <h1><span class="highlight">CitiWatch:</span> Community Alert & Action Hub</h1>
+            <p>Report hazards, track government responses, and help build safer cities together.</p>
+            <p>Your voice matters in creating resilient communities.</p>
             <div class="but">
-                <button class="report">Report Issue</button>
-                <button class="view">View Reported Issues</button>
+               <a href="report.php"> <button class="report">Report an Issue</button></a>
+                <a href="view.php"><button class="view">View Reported Issues</button></a>
             </div>
 
         </div>
@@ -30,7 +33,7 @@
           <h3>Broken Street Light</h3>
           <p>Corner of Main St. and 5th Ave.</p>
           <p class="meta">2 days ago • 5 upvotes</p>
-          <a href="issues.php" class="details">View Details →</a>
+          <a href="view.php" class="viewdetails">View Details →</a>
         </div>
       </div>
 
@@ -41,7 +44,7 @@
           <h3>Broken Street Light</h3>
           <p>Corner of Main St. and 5th Ave.</p>
           <p class="meta">2 days ago • 5 upvotes</p>
-          <a href="issues.php" class="details">View Details →</a>
+          <a href="view.php" class="viewdetails">View Details →</a>
         </div>
       </div>
 
@@ -52,12 +55,12 @@
           <h3>Broken Street Light</h3>
           <p>Corner of Main St. and 5th Ave.</p>
           <p class="meta">2 days ago • 5 upvotes</p>
-          <a href="issues.php" class="details">View Details →</a>
+          <a href="view.php" class="viewdetails">View Details →</a>
         </div>
       </div>
     </div>
     <div class="center">
-      <a href="issues.php" class="all">View All Reports</a>
+      <a href="view.php" class="all">View All Reports</a>
     </div>
 
 
@@ -66,11 +69,6 @@
     </main>
 
      <?php require 'view/footer.php'; ?>
-
-
-
-
-
 
 
 </body>
