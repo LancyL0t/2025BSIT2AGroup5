@@ -1,7 +1,7 @@
 <html>
     <footer>
          <div class="container">
-            <div class = About>
+            <div class = about>
                 <img class="logo" src="image/logo1.png" alt="">
                 <p>CITIWATCH</p>
             </div>
@@ -25,4 +25,5 @@
         </div>
            
     </footer>
+
 </html>
