@@ -212,7 +212,6 @@ footer {
 }
 
 
-/* ================= NAVIGATION ================= */
 @media (max-width: 810px) {
     .navdiv {
         flex-direction: column;
@@ -237,10 +236,10 @@ footer {
         padding: 15px;
     }
     .logo {
-        padding-left: 15px;
+        padding: 0;
     }
 
-    /* Hamburger active animation */
+ 
     .hamburger.active span:nth-child(1) {
         transform: translateY(8px); 
     }
@@ -265,7 +264,7 @@ footer {
     }
 }
 
-/* ================= FOOTER ================= */
+
 @media (max-width: 1024px) {
     .social h3 {
         font-size: 15px;
